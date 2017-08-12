@@ -1,0 +1,10 @@
+1.首页->海外院校 更多 缺少数据接口
+2.首页->海外院校 school empty
+3.海外院校 GET /api/list/searchSchool 页面默认加载条件 key允许为空
+4.schooltype 可能的类型 涉及在页面显示中文内容
+5.https://test.hh-medic.com/admin-fast/api/list/schoolCountryList 国家图片和学校类型
+6https://test.hh-medic.com/admin-fast/api/list/allSchool?pageNum=1 没有实际分页效果
+7案例分析 录取信数据源
+8 school search seem not ok
+
+在线签约 和后台对接 图片链接地址

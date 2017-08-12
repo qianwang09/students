@@ -1,0 +1,114 @@
+@r: 50rem;
+// 搜索框
+.seek {
+    height: 80/@r;
+    width: 100%;
+    background-color: #f4f4f4;
+    position: relative;
+    input {
+        width: 710/@r;
+        height: 60/@r;
+        border-radius: 4/@r;
+        margin: 10/@r 20/@r;
+        text-align: left;
+        padding-left: 300/@r;
+        font-size: 30/@r;
+    }
+    .emptyError {
+        border: 2/@r solid red;
+    }
+    i {
+        position: absolute;
+        left: 270/@r;
+        top: 27/@r;
+        width: 26/@r;
+        height: 26/@r;
+        background: url("../images/search-icon.png") no-repeat;
+        background-size: contain;
+    }
+}
+
+.qualityCaseContent {
+    .qualityCaseItem {
+        .qualityCaseInfo {
+            .recommend {
+                margin: 14/@r 0 0;
+            }
+        }
+    }
+    .noResultMsg {
+        margin-top: 20/@r;
+        text-align: center;
+        font-size: 28/@r;
+        color: grey;
+    }
+}
+
+.qualityCase {
+    .qualityCaseHeader {
+        .schoolTitle {
+            font-weight: bold;
+        }
+        .schoolsIcon {
+            // width: 38/@r;
+            // height: 30/@r;
+            width: 27/@r;
+            height: 28/@r;
+            background: url("../images/oversea-colleges-icon.png") no-repeat;
+            background-size: contain;
+        }
+        .recommendIcon {
+            width: 27/@r;
+            height: 28/@r;
+            background: url("../images/recommend-colleges-icon.png") no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+.schoolCont {
+    .schoolsItem {
+        position: relative;
+        height: 130/@r;
+        border-bottom: 1px solid #e6e6e6;
+        .schoolImg {
+            float: left;
+            width: 70/@r;
+            height: 70/@r;
+            margin: 30/@r 36/@r 0 10/@r;
+        }
+        .schoolName {
+            float: left;
+            font-size: 30/@r;
+            color: #3c3c3c;
+            font-family: '微软雅黑', sans-serif;
+            line-height: 130/@r;
+        }
+        .schoolNum {
+            float: right;
+            font-size: 30/@r;
+            color: #969696;
+            font-family: '微软雅黑', sans-serif;
+            line-height: 130/@r;
+            margin-right: 70/@r;
+            em {
+                font-size: 30/@r;
+                color: #969696;
+                font-family: '微软雅黑', sans-serif;
+                line-height: 130/@r;
+            }
+        }
+        .schoolIcon {
+            position: absolute;
+            right: 20/@r;
+            top: 52/@r;
+            width: 18/@r;
+            height: 30/@r;
+            background: url("../images/next-icon.png") no-repeat;
+            background-size: contain;
+        }
+    }
+    .schoolsItem:last-child {
+        border-bottom: none;
+    }
+}

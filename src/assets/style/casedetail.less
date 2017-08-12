@@ -1,0 +1,141 @@
+@r: 50rem;
+.admitInformation {
+    height: 280/@r;
+    .infoPic {
+        width: 28%;
+        float: left;
+        padding: 60/@r 30/@r;
+        img {
+            width: 160/@r;
+            height: 160/@r;
+            // background-color: pink;
+            background: url("../images/head-icon.png") no-repeat;
+            background-size: contain;
+        }
+    }
+    .infoCont {
+        width: 70%;
+        float: left;
+        padding-top: 17/@r;
+        .name {
+            padding: 12/@r 0;
+            color: #000;
+            font-size: 34/@r;
+            font-weight: bold;
+            line-height: 1;
+        }
+        p {
+            font-size: 26/@r;
+            line-height: 46/@r;
+            color: #3c3c3c; //  white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1; 
+        }
+    }
+}
+
+//录取信息
+.admissionInformation {
+    padding: 20/@r 30/@r;
+    p {
+        font-size: 28/@r;
+        line-height: 50/@r;
+    }
+}
+
+//录取信
+.qualityCase {
+    .qualityCaseHeader {
+        // img{
+        //   float: left;
+        //   margin-top: 34/@r;
+        //   width:34/@r;
+        //   height: 30/@r;
+        //   // background-color: pink;
+        // }
+        .notification {
+            display: inline-block;
+            width: 34/@r;
+            height: 23/@r;
+            background: url('../images/notification.png') no-repeat;
+            background-size: contain;
+        }
+        .caselogo {
+            display: inline-block;
+            width: 28/@r;
+            height: 31/@r;
+            background: url('../images/caselogo.png') no-repeat;
+            background-size: contain;
+            margin-top: 26/@r;
+        }
+    }
+    .content {
+        padding: 30/@r 30/@r;
+        li {
+            float: left;
+            width: 150/@r;
+            height: 210/@r;
+            margin-right: 30/@r;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+    .unfoldButton {
+        display: block;
+        font-size: 24/@r;
+        color: #1d77ff;
+        text-align: center;
+        padding: 40/@r 0;
+    }
+}
+
+.showCont {
+    padding-bottom: 100/@r;
+}
+
+.information {
+    padding: 30/@r 40/@r 0/@r 40/@r;
+    font-size: 28/@r;
+    line-height: 45/@r;
+    color: #3c3c3c;
+    font-family: '微软雅黑', sans-serif;
+    text-indent: 20/@r;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.infoShow {
+    padding: 30/@r 40/@r 0/@r 40/@r;
+    margin-bottom: 50/@r;
+    font-size: 28/@r;
+    line-height: 45/@r;
+    color: #3c3c3c;
+    font-family: '微软雅黑', sans-serif;
+    text-indent: 20/@r;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.swiperFullScreen {
+  position: fixed;
+  margin: 0;
+  z-index: 5000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black; // padding: 250/@r 0;
+}

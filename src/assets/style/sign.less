@@ -1,0 +1,104 @@
+@r: 50rem;
+body {
+    background-color: #f4f4f4;
+    font-size: 28/@r;
+}
+
+//
+.main {
+    .item {
+        height: 100/@r;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e6e6e6;
+        padding-left: 29/@r;
+        background-color: #fff;
+        .itemInfo {
+            font-size: 30/@r;
+            color: #333;
+            line-height: 100/@r;
+        }
+        .money {
+            color: #e01d1d;
+            em {
+                font-size: 30/@r;
+                line-height: 100/@r;
+                color: #e01d1d;
+            }
+        }
+    }
+    .sign {
+        background-color: #f4f4f4;
+        // padding: 24/@r 0/@r; // padding-bottom: 120/@r;
+        padding: 23/@r 0/@r; // padding-bottom: 120/@r; 12 12 15 39 78 32 46
+        .checkCont {
+            // position: relative;
+            margin: 0/@r 0 0 29/@r; // padding-left: 53/@r;
+            // height: 32/@r;
+            .checkIcon {
+                // position: absolute;
+                // left: 0;
+                // top: 0;
+                display: inline-block;
+                width: 30/@r;
+                height: 30/@r;
+                // line-height: 30/@r;
+                border-radius: 50%;
+                border: 2/@r solid #c0c0c0;
+            }
+            .checkIconActive {
+                background: url("../images/signcheck.png") no-repeat;
+                background-size: contain;
+            }
+            .agreeText {
+                // position: absolute;
+                // left: 53/@r;
+                // top: 0;
+                vertical-align: center;
+                color: #282828;
+                font-size: 26/@r;
+                // line-height: 50/@r;
+                .contract {
+                    cursor: pointer;
+                    color: #1482f0;
+                    font-size: 26/@r;
+                    line-height: 30/@r;
+                }
+            }
+        }
+    }
+}
+
+.signBg {
+    background: url("../images/signpic.png") no-repeat center ;
+    background-size: contain;
+}
+
+.signCont {
+    position: relative;
+    width: 725/@r;
+    height: 530/@r;
+    margin: 0 auto;
+    border: 2/@r dashed #c8e4ff;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    canvas {
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 0; // width: 725/@r;
+        // height: 530/@r;
+    }
+    .re-sign {
+        color: #1482f0;
+        font-size: 28/@r;
+        position: absolute;
+        bottom: 100/@r;
+        right: 48/@r;
+    }
+}
+  .validationError{
+    font-size: 28/@r;
+    color: red;
+  }

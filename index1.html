@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="邦邦留学">
+  <meta name="description" content="邦邦留学">
+  <title>邦邦留学</title>
+</head>
+<body>
+<video id="video" controls="controls">
+<source src="http://patient-public.oss-cn-beijing.aliyuncs.com/video/0712ab33859716aeb236a9d48abf625e.mp4">
+</video>
+<video id="video1" controls="controls">
+<source src="http://imgs.hh-medic.com/bangbang/20170809/NJv19U.mp4">
+</video>
+
+<div id="output"></div>
+<script type="text/javascript">
+(function(){
+var video, output;
+var scale = 0.8;
+var initialize = function() {
+output = document.getElementById("output");
+video = document.getElementById("video");
+video.addEventListener('loadeddata',captureImage);
+};
+ 
+var captureImage = function() {
+  alert(1);
+            var canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth * scale;
+            canvas.height = video.videoHeight * scale;
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+ 
+            var img = document.createElement("img");
+            img.setAttribute('crossOrigin', 'anonymous');
+            img.src = canvas.toDataURL("image/png");
+            output.appendChild(img);
+};
+ 
+initialize();
+})();
+</script>
+</body>
+</html>

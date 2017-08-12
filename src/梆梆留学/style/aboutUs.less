@@ -1,0 +1,228 @@
+@r:50rem;
+//公共样式
+.title{
+  position: relative;
+  font-size: 34/@r;
+  color: #118ee9;
+  font-family: '微软雅黑', sans-serif;
+  line-height: 1;
+  padding: 34/@r 0 34/@r 16/@r;
+  margin-left: 30/@r;
+  &::before{
+    content: '';
+    position: absolute;
+    top:36/@r;
+    left: 0;
+    width: 0;
+    height: 30/@r;
+    border: 3/@r solid #118ee9;
+  }
+}
+//公司简介
+.companyInfo{
+  .companyInfoText{
+    font-size: 28/@r;
+    line-height: 46/@r;
+    color: #3c3c3c;
+    margin: 0 30/@r 20/@r;
+    text-indent: 45/@r;
+  }
+  .companyInfoPic{
+    width: 710/@r;
+    height: 350/@r;
+    margin:0 20/@r 7/@r;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+//特色介绍
+.special{
+  margin-bottom: 10/@r;
+  .stepList{
+    margin: 4/@r 30/@r;
+    li{
+      height: 60/@r;
+      margin-bottom: 31/@r;
+      .stepIcon{
+        float: left;
+        width: 60/@r;
+        height: 60/@r;
+        margin-right: 22/@r;
+      }
+      .step1{
+        background: url("../images/step1.png") no-repeat;
+        background-size: contain;
+      }
+      .step2{
+        background: url("../images/step2.png") no-repeat;
+        background-size: contain;
+      }
+      .step3{
+        background: url("../images/step3.png") no-repeat;
+        background-size: contain;
+      }
+      .step4{
+        background: url("../images/step4.png") no-repeat;
+        background-size: contain;
+      }
+      .step5{
+        background: url("../images/step5.png") no-repeat;
+        background-size: contain;
+      }
+      .step6{
+        background: url("../images/step6.png") no-repeat;
+        background-size: contain;
+      }
+      .step7{
+        background: url("../images/step7.png") no-repeat;
+        background-size: contain;
+      }
+      .specialItem{
+        float: left;
+        font-size: 30/@r;
+        color: #000;
+        line-height: 60/@r;
+        font-weight: bold;
+
+      }
+    }
+
+  }
+
+}
+//流程介绍
+.process{
+  .processList{
+    margin-bottom: 56/@r;
+    .processItem{
+      position: relative;
+      height: 58/@r;
+      border: 1px solid #c0c0c0;
+      border-radius: 8/@r;
+      text-align: center;
+      margin:0 auto 50/@r;
+      .processIcon{
+        float: left;
+
+      }
+      .processOne{
+        width:29/@r;
+        height: 31/@r;
+        background: url("../images/process1.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 22/@r 0 35/@r;
+      }
+      .processTwo{
+        width:29/@r;
+        height: 30/@r;
+        background: url("../images/process2.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 26/@r 0 43/@r;
+      }
+      .processThree{
+        width:30/@r;
+        height: 30/@r;
+        background: url("../images/process3.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 17/@r 0 58/@r;
+      }
+      .processFour{
+        width:30/@r;
+        height: 30/@r;
+        background: url("../images/process4.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 20/@r 0 60/@r;
+      }
+      .processFive{
+        width:30/@r;
+        height: 30/@r;
+        background: url("../images/process5.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 24/@r 0 52/@r;
+      }
+      .processSix{
+        width:42/@r;
+        height: 33/@r;
+        background: url("../images/process6.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 22/@r 0 40/@r;
+      }
+      .processSeven{
+        width:30/@r;
+        height: 32/@r;
+        background: url("../images/process8.png") no-repeat;
+        background-size: contain;
+        margin: 13/@r 26/@r 0 48/@r;
+      }
+      //流程文字
+      .processInfo{
+        float: left;
+        font-size: 28/@r;
+        color: #3c3c3c;
+        line-height: 58/@r;
+      }
+      //流程箭头
+      .arrow{
+        position: absolute;
+        bottom: -39/@r;
+        left: 50%;
+        width: 9/@r;
+        height: 29/@r;
+        background: url("../images/arrow.png") no-repeat;
+        background-size: contain;
+      }
+    }
+    .processStep1{
+       width: 245/@r;
+     }
+    .processStep2{
+      width: 345/@r;
+    }
+    .processStep3{
+      width: 420/@r;
+    }
+    .processStep4{
+      width: 460/@r;
+    }
+    .processStep6{
+      width: 365/@r;
+    }
+  }
+}
+//工作室
+.studio{
+  .studioList{
+    margin-left: 30/@r;
+    .studioItem{
+      height: 30/@r;
+      margin-bottom: 36/@r;
+      .studioIcon{
+        float: left;
+        width: 25/@r;
+        height: 26/@r;
+        background: url("../images/stadio.png") no-repeat;
+        background-size: contain;
+        margin-right: 28/@r;
+        margin-top: 3/@r;
+      }
+      .studioInfo{
+        float: left;
+        color: #000;
+        font-size: 28/@r;
+        line-height: 30/@r;
+      }
+    }
+  }
+}
+//联系我们
+.touchUs{
+  .touchUsInfo{
+    margin-left: 30/@r;
+    font-size: 30/@r;
+    color: #000;
+    line-height: 1;
+    padding-bottom: 38/@r;
+  }
+}

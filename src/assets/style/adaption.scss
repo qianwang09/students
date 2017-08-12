@@ -1,0 +1,135 @@
+//retina image display iPhone6 basevalue = 75 rem = px/basevalue
+@mixin px2rem($property, $px) {
+  #{$property}: $px / 75 * 1rem;
+}
+
+//font size
+@mixin px2px($property, $px) {
+  #{$property}: round($px / 2) * 1px;
+  [data-dpr="1.5"] & {
+    #{$property}: round($px * 1.5 / 2) * 1px;
+  }
+  [data-dpr="2"] & {
+    #{$property}: $px * 1px;
+  }
+  [data-dpr="2.5"] & {
+    #{$property}: round($px * 2.5 / 2) * 1px;
+  }
+  [data-dpr="2.75"] & {
+    #{$property}: round($px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+    #{$property}: round($px * 3/ 2) * 1px
+  }
+  [data-dpr="3.5"] & {
+    #{$property}: round($px * 3.5/ 2) * 1px
+  }
+  [data-dpr="4"] & {
+    #{$property}: $px * 2px;
+  }
+}
+
+.img-test {
+  @include px2rem(width, 750);
+  @include px2rem(height, 360);
+}
+
+.li-test {
+  @include px2rem(width, 200);
+  border: 1px solid #009944;
+  display: inline-block;
+}
+
+.font-test {
+  @include px2px(font-size, 26);
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  line-height: 20px;
+}
+
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.inline>li,
+ol.inline>li {
+  display: inline-block;
+  *display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+  *zoom: 1;
+}
+
+dl {
+  margin-bottom: 20px;
+}
+
+dt,
+dd {
+  line-height: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 10px;
+}
